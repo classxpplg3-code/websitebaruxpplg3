@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Website resmi kelas X PPLG 3 SMKN 1 Ciomas - Komunitas calon pengembang perangkat lunak masa depan." />
+    <title>X PPLG 3 — SMKN 1 Ciomas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-circle">
+                    <span>X3</span>
+                </div>
+                <span class="logo-text">X PPLG 3</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#beranda" class="nav-link active" id="nav-beranda">BERANDA</a></li>
+                <li><a href="#struktur" class="nav-link" id="nav-struktur">STRUKTUR</a></li>
+                <li><a href="#siswa" class="nav-link" id="nav-siswa">SISWA</a></li>
+                <li><a href="#gallery" class="nav-link" id="nav-gallery">GALLERY</a></li>
+                <li><a href="#contact" class="nav-link" id="nav-contact">CONTACT</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== BERANDA ===== -->
+    <section class="section" id="beranda">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-tag">SMKN 1 CIOMAS</div>
+                <h1 class="hero-title">
+                    SELAMAT DATANG<br />
+                    DI WEBSITE <span class="accent">X PPLG 3</span>
+                </h1>
+                <p class="hero-subtitle">Explore our journey, our projects, and our passion for technology.</p>
+                <div class="hero-desc-card">
+                    <p>Selamat datang di ruang digital X PPLG 3. Kami bukan sekadar kumpulan siswa, melainkan komunitas
+                        calon pengembang perangkat lunak yang siap merakit baris demi baris kode menjadi solusi masa
+                        depan. Di sini, kreativitas bertemu dengan logika, dan kerja keras bertemu dengan inovasi.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card" id="stat-jumlah">
+                        <div class="stat-label">JUMLAH SISWA</div>
+                        <div class="stat-number" id="countUp">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">FOCUS ON UJI LEVEL</div>
+                        <ul class="stat-list">
+                            <li>Logic Validation: Mengasah alur berpikir sistematis.</li>
+                            <li>Coding Challenge: Implementasi bahasa pemrograman.</li>
+                            <li>Project Based: Membangun aplikasi sederhana.</li>
+                        </ul>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">TECH STACK / SKILLS</div>
+                        <p class="stat-text">Ikon-ikon kecil bahasa pemrograman atau software yang sedang kalian
+                            pelajari (HTML, CSS, JS, Python, atau Figma).</p>
+                        <div class="tech-icons">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JS</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="badge-ring">
+                    <div class="badge-inner">
+                        <div class="badge-code"><i class="fas fa-code"></i></div>
+                        <div class="badge-title">X PPLG 3</div>
+                        <div class="badge-sub">SMKN 1 CIOMAS</div>
+                    </div>
+                    <div class="ring-orbit orbit-1"></div>
+                    <div class="ring-orbit orbit-2"></div>
+                    <div class="ring-dot dot-1"></div>
+                    <div class="ring-dot dot-2"></div>
+                    <div class="ring-dot dot-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STRUKTUR KELAS ===== -->
+    <section class="section" id="struktur">
+        <div class="section-header">
+            <h2 class="section-title">STRUKTUR KELAS</h2>
+            <p class="section-subtitle accent">X PPLG 3</p>
+        </div>
+        <div class="struktur-grid" id="strukturGrid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- ===== JUMLAH SISWA ===== -->
+    <section class="section" id="siswa">
+        <div class="section-header">
+            <h2 class="section-title">JUMLAH SISWA</h2>
+            <p class="section-subtitle accent">X PPLG 3</p>
+        </div>
+        <div class="siswa-container">
+            <div class="siswa-left">
+                <div class="siswa-list-header">
+                    <span>Daftar Siswa</span>
+                    <span class="total-badge">45 Siswa</span>
+                </div>
+                <div class="siswa-list" id="siswaList">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+            <div class="siswa-right" id="siswaDetail">
+                <div class="siswa-placeholder" id="siswaPlaceholder">
+                    <div class="placeholder-icon"><i class="fas fa-user-circle"></i></div>
+                    <p>Pilih nama siswa di sebelah kiri untuk melihat identitas</p>
+                </div>
+                <div class="siswa-profile" id="siswaProfile" style="display:none;">
+                    <div class="profile-avatar" id="profileAvatar"></div>
+                    <div class="profile-info">
+                        <h3 id="profileName"></h3>
+                        <div class="profile-details" id="profileDetails"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="section" id="gallery">
+        <div class="section-header">
+            <h2 class="section-title">GALLERY</h2>
+            <p class="section-subtitle accent">X PPLG 3</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">SILAHKAN CONTACT KAMI YA!</h2>
+            <p class="section-subtitle">saran yang berpositif jangan negtif</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info-row">
+                <div class="contact-info-card">
+                    <div class="contact-info-label">Social Media</div>
+                    <a href="https://www.instagram.com/xpplg.3rd/" target="_blank" class="contact-info-link">
+                        <i class="fab fa-instagram"></i> @xpplg3rd
+                    </a>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-info-label">Get in Touch</div>
+                    <a href="mailto:xxpplg3@gmail.com" class="contact-info-link">
+                        <i class="fas fa-envelope"></i> xxpplg3@gmail.com
+                    </a>
+                    <a href="https://wa.me/6281294862060" target="_blank" class="contact-info-link" id="waLink">
+                        <i class="fab fa-whatsapp"></i> WA: Chat Admin Kelas
+                    </a>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-info-label">Our Base</div>
+                    <p class="contact-base">X PPLG 3</p>
+                    <p class="contact-base">SMKN 1 Ciomas</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeojqdya" method="POST">
+                <div class="form-group">
+                    <label for="userName">Nama</label>
+                    <input type="text" id="userName" name="name" placeholder="Masukkan Nama Anda" required />
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="email" placeholder="Masukkan Email Anda" required />
+                </div>
+                <div class="form-group">
+                    <label for="userMessage">Pesan</label>
+                    <textarea id="userMessage" name="message" placeholder="Masukkan Pesan Anda" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    <span>KIRIM</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <p class="form-note">Pesan akan dikirim ke email kelas kami secara otomatis.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-circle small"><span>X3</span></div>
+                <span>X PPLG 3 — SMKN 1 Ciomas</span>
+            </div>
+            <p class="footer-copy">&copy; 2025 X PPLG 3. Made with <i class="fas fa-heart accent"></i> by PDD Kelas.</p>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL STRUKTUR ===== -->
+    <div class="modal-overlay" id="strukturModal" role="dialog" aria-modal="true">
+        <div class="modal-box" id="strukturModalBox">
+            <button class="modal-close" id="strukturModalClose" aria-label="Tutup"><i class="fas fa-times"></i></button>
+            <div class="modal-avatar" id="modalAvatar"></div>
+            <h3 class="modal-name" id="modalName"></h3>
+            <div class="modal-badge" id="modalJabatan"></div>
+            <p class="modal-desc" id="modalDesc"></p>
+            <div class="modal-duties" id="modalDuties"></div>
+        </div>
+    </div>
+
+    <!-- ===== MODAL GALLERY ===== -->
+    <div class="modal-overlay" id="galleryModal" role="dialog" aria-modal="true">
+        <div class="modal-gallery-box">
+            <button class="modal-close" id="galleryModalClose" aria-label="Tutup"><i class="fas fa-times"></i></button>
+            <div class="gallery-modal-img-wrap">
+                <img src="" alt="Gallery" id="galleryModalImg" />
+            </div>
+            <p class="gallery-modal-caption" id="galleryModalCaption"></p>
+        </div>
+    </div>
+
+    <!-- ===== SUCCESS TOAST ===== -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMsg">Pesan berhasil dikirim!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
